@@ -8,7 +8,7 @@ This is a [React Native](https://reactnative.dev/) project. Which is [`Human and
 First, run the development server:
 
 ```bash
-npm run android
+$ npm run android
 ```
 ## Learn More
 
