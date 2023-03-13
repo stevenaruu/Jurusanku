@@ -7,3 +7,11 @@ First, run the development server:
 ```bash
 npm run android
 ```
+## Learn More
+
+To learn more about React Native, take a look at the following resources:
+
+- [React Native Documentation](https://reactnative.dev/) - learn about React Native features.
+- [Learn React Native](https://reactnative.dev/docs/components-and-apis) - an interactive React Native tutorial.
+
+You can check out [the React Native GitHub Community](https://github.com/react-native-community) - your feedback and contributions are welcome!
