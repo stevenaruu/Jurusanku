@@ -1,5 +1,8 @@
 This is a [React Native](https://reactnative.dev/) project. Which is [`Human and Computer Interaction`](https://reactnative.dev/docs/environment-setup) project.
 # `Jurusanku` ![jurusanku_logopng](https://user-images.githubusercontent.com/105982460/224595784-3884c572-44f1-4a6a-9af9-ffe7c0dc4778.png "Jurusanku logo")
+
+![mockup](https://user-images.githubusercontent.com/105982460/224598350-625cdd8d-1820-4b96-9ea0-3367b5da06c6.png)
+
 ## Getting Started
 
 First, run the development server:
