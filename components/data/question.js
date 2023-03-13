@@ -1,32 +1,32 @@
 export default data = [
     {
-        question: "Apakah anda suka membaca?",
+        question: "Keahlian apa yang lebih ingin anda tingkatkan?",
     },
     {
-        question: "Apakah anda suka melukis?",
+        question: "Seberapa pengetahuan anda mengenai teknologi?",
     },
     {
-        question: "Apakah anda suka bernyanyi?",
+        question: "Dalam skala 1-4, bagaimana rasa mau belajar anda terhadap matematika?",
     },
     {
-        question: "Apakah anda suka berhitung?",
+        question: "Bagaimana bahasa pemrograman di mata anda?",
     },
     {
-        question: "Apakah anda suka berenang?",
+        question: "Apa yang biasa ada di pikiran anda ketika berinteraksi dengan orang lain?",
     },
     {
-        question: "Apakah anda suka melakukan perjalanan?",
+        question: "Bila seseorang ingin bercerita atau curhat pada anda, apa yang kemungkinan anda lakukan?",
     },
     {
-        question: "Apakah anda suka menonton film?",
+        question: "Bagaimana rasa keterkarikan anda terhadap design suatu bangunan yang anda lihat?",
     },
     {
-        question: "Apakah anda suka bermain puzzle?",
+        question: "Apakah anda tertarik cara kerja dan cara membuat aplikasi dan website?",
     },
     {
-        question: "Apakah anda suka otomotif?",
+        question: "Dalam skala 1-4, bagaimana ketertarikan anda dalam mempelajari cara menggambar?",
     },
     {
-        question: "Matematika terlihat indah di mata anda",
+        question: "Menurut anda, mengapa matematika sangat penting dan sangat terasa kehadiranya di sejarah manusia?",
     }
 ]
