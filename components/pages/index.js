@@ -10,5 +10,6 @@ import Test8 from "./Test/test_8";
 import Test9 from "./Test/test_9";
 import Test10 from "./Test/test_10";
 import Validate from "./Validate";
+import Result from "./Result";
 
-export { Home, Test1, Test2, Test3, Test4, Test5, Test6, Test7, Test8, Test9, Test10, Validate }
+export { Home, Test1, Test2, Test3, Test4, Test5, Test6, Test7, Test8, Test9, Test10, Validate, Result }
