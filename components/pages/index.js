@@ -11,5 +11,9 @@ import Test9 from "./Test/test_9";
 import Test10 from "./Test/test_10";
 import Validate from "./Validate";
 import Result from "./Result";
+import Splash from "./Splash";
+import ThankSplash from "./Thank_You_Splash";
+import Thank from "./Thank_You";
+import Loading from "./Loading";
 
-export { Home, Test1, Test2, Test3, Test4, Test5, Test6, Test7, Test8, Test9, Test10, Validate, Result }
+export { Home, Test1, Test2, Test3, Test4, Test5, Test6, Test7, Test8, Test9, Test10, Validate, Result, Splash, ThankSplash, Thank, Loading }

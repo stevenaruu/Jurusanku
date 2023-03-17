@@ -8,5 +8,8 @@ import dokter from './dokter.png'
 import programmer from './programmer.png'
 import sastra_bahasa from './sastra-bahasa.png'
 import game_app from './game-application.png'
+import splash_screen from './splash-screen.png'
+import arrow2 from './arrow2.png'
+import thank_you from './thank-you.png'
 
-export { orang, homepage_icon, arrow, green_wallpaper, white_wallpaper, game_app, sastra_bahasa, programmer, dokter, bisnis }
+export { orang, homepage_icon, arrow, green_wallpaper, white_wallpaper, game_app, sastra_bahasa, programmer, dokter, bisnis, splash_screen, arrow2, thank_you }

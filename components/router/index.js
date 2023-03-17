@@ -1,25 +1,13 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Home, Test1, Test2, Test3, Test4, Test5, Test6, Test7, Test8, Test9, Test10, Validate, Result } from '../pages';
-
+import { Home, Test1, Test2, Test3, Test4, Test5, Test6, Test7, Test8, Test9, Test10, Validate, Result, Splash, Thank, ThankSplash, Loading } from '../pages';
 const Stack = createNativeStackNavigator();
-
-const config = {
-  animation: 'spring',
-  config: {
-    stiffness: 1000,
-    damping: 500,
-    mass: 3,
-    overshootClamping: true,
-    restDisplacementThreshold: 0.01,
-    restSpeedThreshold: 0.01,
-  },
-};
 
 const Router = () => {
   return (
     <Stack.Navigator>
+        <Stack.Screen name='Splash' component={Splash} options={{ headerShown: false }} />
         <Stack.Screen name='Home' component={Home} options={{ headerShown: false }} />
         <Stack.Screen name='Test1' component={Test1} options={{ headerShown: false, animation: 'simple_push' }} />
         <Stack.Screen name='Test2' component={Test2} options={{ headerShown: false, animation: 'slide_from_right', }} />
@@ -33,6 +21,9 @@ const Router = () => {
         <Stack.Screen name='Test10' component={Test10} options={{ headerShown: false, animation: 'slide_from_right' }} />
         <Stack.Screen name='Validate' component={Validate} options={{ headerShown: false, animation: 'simple_push' }} />
         <Stack.Screen name='Result' component={Result} options={{ headerShown: false, animation: 'simple_push' }} />
+        <Stack.Screen name='Thank' component={Thank} options={{ headerShown: false, animation: 'simple_push' }} />
+        <Stack.Screen name='ThankSplash' component={ThankSplash} options={{ headerShown: false, animation: 'simple_push' }} />
+        <Stack.Screen name='Loading' component={Loading} options={{ headerShown: false, animation: 'simple_push' }} />
     </Stack.Navigator>
   )
 }
