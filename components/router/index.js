@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Home, Test1, Test2, Test3, Test4, Test5, Test6, Test7, Test8, Test9, Test10, Validate, Result, Splash, Thank, ThankSplash, Loading } from '../pages';
+import { Home, Test1, Test2, Test3, Test4, Test5, Test6, Test7, Test8, Test9, Test10, Validate, Result, Splash, Thank, ThankSplash, Loading, Login, Register } from '../pages';
 const Stack = createNativeStackNavigator();
 
 const Router = () => {
@@ -9,6 +9,8 @@ const Router = () => {
     <Stack.Navigator>
         <Stack.Screen name='Splash' component={Splash} options={{ headerShown: false }} />
         <Stack.Screen name='Home' component={Home} options={{ headerShown: false }} />
+        <Stack.Screen name='Login' component={Login} options={{ headerShown: false, animation: 'simple_push' }} />
+        <Stack.Screen name='Register' component={Register} options={{ headerShown: false, animation: 'simple_push' }} />
         <Stack.Screen name='Test1' component={Test1} options={{ headerShown: false, animation: 'simple_push' }} />
         <Stack.Screen name='Test2' component={Test2} options={{ headerShown: false, animation: 'slide_from_right', }} />
         <Stack.Screen name='Test3' component={Test3} options={{ headerShown: false, animation: 'slide_from_right' }} />

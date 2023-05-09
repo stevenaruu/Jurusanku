@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     text: {
-        color: 'black',
+        color: '#474747',
         textAlign: 'center',
         fontSize: 30,
         fontWeight: 'bold'
@@ -52,8 +52,6 @@ const styles = StyleSheet.create({
 
 })
 
-
-
 const Home = ({ navigation }) => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
@@ -64,7 +62,7 @@ const Home = ({ navigation }) => {
                         <Text style={styles.text}>Penjurusan Anda!</Text>
                     </View>
                     <Image source={homepage_icon} style={{ resizeMode: 'contain', height: 430 }} />
-                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Test1')} >
+                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')} >
                         <Text style={{ color: '#F4F9F4' }}>Get Started</Text>
                         <View style={styles.bulet}>
                             <Image source={arrow} style={{ resizeMode: 'contain', height: 20, width: 20, marginRight: 4 }} />
