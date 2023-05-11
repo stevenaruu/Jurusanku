@@ -1,7 +1,5 @@
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View, ImageBackground } from 'react-native'
 import React, { useEffect } from 'react'
-import TrackPlayer from 'react-native-track-player';
-import { useTrackPlayerEvents } from 'react-native-track-player/lib/hooks';
 import { arrow, green_wallpaper, homepage_icon, white_wallpaper } from '../../assets/image'
 
 // #8AAE92 -> hijau tua
