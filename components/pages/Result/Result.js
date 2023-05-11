@@ -74,6 +74,8 @@ const styles = StyleSheet.create({
 const Result = ({ navigation }) => {
 
     const [visible, setVisible] = useState(false);
+    let random = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+    console.log(random);
 
     return (
         <SafeAreaView style={{ flex: 1 }}>

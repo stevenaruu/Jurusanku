@@ -1,5 +1,7 @@
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View, ImageBackground } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
+import TrackPlayer from 'react-native-track-player';
+import { useTrackPlayerEvents } from 'react-native-track-player/lib/hooks';
 import { arrow, green_wallpaper, homepage_icon, white_wallpaper } from '../../assets/image'
 
 // #8AAE92 -> hijau tua
@@ -62,7 +64,7 @@ const Home = ({ navigation }) => {
                         <Text style={styles.text}>Penjurusan Anda!</Text>
                     </View>
                     <Image source={homepage_icon} style={{ resizeMode: 'contain', height: 430 }} />
-                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')} >
+                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')}>
                         <Text style={{ color: '#F4F9F4' }}>Get Started</Text>
                         <View style={styles.bulet}>
                             <Image source={arrow} style={{ resizeMode: 'contain', height: 20, width: 20, marginRight: 4 }} />

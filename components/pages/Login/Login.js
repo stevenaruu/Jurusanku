@@ -1,4 +1,5 @@
 import { ImageBackground, SafeAreaView, StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
+import Modal from 'react-native-modal'
 import React, { useState } from 'react'
 import { green_wallpaper } from '../../assets/image'
 const styles = StyleSheet.create({
@@ -47,12 +48,48 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         bottom: 30,
         position: 'absolute',
-    }
+    },
+    modal: {
+        paddingHorizontal: 30,
+        paddingHorizontal: 30,
+        borderRadius: 6,
+        backgroundColor: 'white',
+        height: 200,
+        display: 'flex',
+        justifyContent: 'center',
+        position: 'relative',
+    },
+    modalText: {
+        justifyContent: 'center',
+        display: 'flex',
+        alignItems: 'center',
+        marginBottom: 40
+    },
+    modalButton: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'row',
+        position: 'absolute',
+        right: 30,
+        bottom: 20,
+    },
+    modalButtonValue: {
+        width: 285,
+        height: 45,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 5
+    },
 })
 
 const Login = ({ navigation }) => {
+    const [visible, setVisible] = useState(false);
     const [usernameOrEmail, setUsernameOrEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [message1, setMessage1] = useState("");
+    const [message2, setMessage2] = useState("");
     const handleLogin = () => {
         const username = "Jurusanku";
         const email = "jurusanku@gmail.com";
@@ -65,6 +102,14 @@ const Login = ({ navigation }) => {
 
         if ((usernameOrEmail === username || lowerEmail === email) && password === pass) {
             navigation.navigate('Test1');
+        }else if(usernameOrEmail == "" || password == ""){
+            setVisible(true);
+            setMessage1("Kolom Username/Email dan Password");
+            setMessage2("Tidak boleh kosong!");
+        }else{
+            setVisible(true);
+            setMessage1("Username/Email dan Password");
+            setMessage2("yang Anda masukkan salah!");
         }
     }
     return (
@@ -83,6 +128,7 @@ const Login = ({ navigation }) => {
                         style={styles.TextInput}
                         placeholder='Password'
                         onChangeText={setPassword}
+                        secureTextEntry={true}
                     />
                     <TouchableOpacity style={{ display: 'flex', alignItems: 'flex-start', width: 230 }}>
                         <Text style={{ marginVertical: 15, textAlign: 'left', color: '#C4E3CB', textDecorationLine: 'underline', fontWeight: 'bold' }}>
@@ -101,6 +147,21 @@ const Login = ({ navigation }) => {
                         </TouchableOpacity>
                     </View>
                 </View>
+                <Modal isVisible={visible}>
+                    <View style={styles.modal}>
+                        <View style={styles.modalText}>
+                            <Text style={{ fontWeight: 'bold', fontSize: 16 }} >{message1}</Text>
+                            <Text style={{ fontWeight: 'bold', fontSize: 16 }} >{message2}</Text>
+                        </View>
+                        <View style={styles.modalButton}>
+                            <TouchableOpacity style={[styles.modalButtonValue, { backgroundColor: '#8AAE92' }]} onPress={() => setVisible(false)} >
+                                <Text style={{ color: '#F4F9F4', fontWeight: 'bold' }}>
+                                    OKAY!
+                                </Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+                </Modal>
             </ImageBackground>
         </SafeAreaView>
     )
