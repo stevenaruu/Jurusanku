@@ -40,7 +40,7 @@ const Thank = ({ navigation }) => {
                 <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Loading')}>
                     <Text style={[styles.text, { color: '#F4F9F4', fontSize: 28 }]}>Ya</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+                <TouchableOpacity onPress={() => navigation.navigate('Home', { isLogin: true })}>
                     <Text style={[styles.text, { fontSize: 20, marginTop: 20, textDecorationLine: 'underline' }]}>Tidak</Text>
                 </TouchableOpacity>
             </ImageBackground>

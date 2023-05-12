@@ -1,6 +1,6 @@
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View, ImageBackground } from 'react-native'
-import React, { useEffect } from 'react'
-import { arrow, green_wallpaper, homepage_icon, white_wallpaper } from '../../assets/image'
+import React, { useEffect, useState } from 'react'
+import { arrow, green_wallpaper, homepage_icon } from '../../assets/image'
 
 // #8AAE92 -> hijau tua
 // #C4E3CB -> hijau muda
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         gap: 10,
         position: 'relative',
-        paddingLeft: 20
+        paddingLeft: 50
     },
     bulet: {
         width: 27,
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#F4F9F4',
         borderRadius: 100,
         position: 'absolute',
-        right: 7,
+        left: 7,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -52,7 +52,37 @@ const styles = StyleSheet.create({
 
 })
 
-const Home = ({ navigation }) => {
+const Home = ({ navigation, route }) => {
+    const [isLogin, setIsLogin] = useState(false)
+
+    useEffect(() => {
+        if (route.params && route.params.isLogin) {
+            setIsLogin(true);
+        }
+    }, [route.params]);
+
+    // const [positionAnim] = useState(new Animated.Value(7));
+    // const handleGetStarted = () => {
+    //     Animated.timing(positionAnim, {
+    //         toValue: 20,
+    //         duration: 1000,
+    //         useNativeDriver: false,
+    //     }).start(() => {
+    //         if (isLogin === false) {
+    //             navigation.navigate('Login');
+    //         } else {
+    //             navigation.navigate('Test1');
+    //         }
+    //     });
+    // };
+
+    const handleGetStarted = () => {
+        if(isLogin === false){
+            navigation.navigate('Login')
+        }else{
+            navigation.navigate('Test1')
+        }
+    }
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <ImageBackground source={green_wallpaper} style={styles.container} >
@@ -62,7 +92,7 @@ const Home = ({ navigation }) => {
                         <Text style={styles.text}>Penjurusan Anda!</Text>
                     </View>
                     <Image source={homepage_icon} style={{ resizeMode: 'contain', height: 430 }} />
-                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')}>
+                    <TouchableOpacity style={[styles.button]} onPress={handleGetStarted}>
                         <Text style={{ color: '#F4F9F4' }}>Get Started</Text>
                         <View style={styles.bulet}>
                             <Image source={arrow} style={{ resizeMode: 'contain', height: 20, width: 20, marginRight: 4 }} />
