@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "HCIiiii.app"
-               BlueprintName = "HCIiiii"
-               ReferencedContainer = "container:HCIiiii.xcodeproj">
+               BuildableName = "Jurusanku.app"
+               BlueprintName = "Jurusanku"
+               ReferencedContainer = "container:Jurusanku.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "HCIiiiiTests.xctest"
-               BlueprintName = "HCIiiiiTests"
-               ReferencedContainer = "container:HCIiiii.xcodeproj">
+               BuildableName = "JurusankuTests.xctest"
+               BlueprintName = "JurusankuTests"
+               ReferencedContainer = "container:Jurusanku.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "HCIiiii.app"
-            BlueprintName = "HCIiiii"
-            ReferencedContainer = "container:HCIiiii.xcodeproj">
+            BuildableName = "Jurusanku.app"
+            BlueprintName = "Jurusanku"
+            ReferencedContainer = "container:Jurusanku.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "HCIiiii.app"
-            BlueprintName = "HCIiiii"
-            ReferencedContainer = "container:HCIiiii.xcodeproj">
+            BuildableName = "Jurusanku.app"
+            BlueprintName = "Jurusanku"
+            ReferencedContainer = "container:Jurusanku.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

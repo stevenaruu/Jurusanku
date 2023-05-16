@@ -168,19 +168,19 @@ const Test8 = ({ navigation, route }) => {
         return (
             <View>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor1 }]} onPress={checkedOption1} >
-                    <Text style={{ fontSize: 18 }}>Sangat Tidak Setuju</Text>
+                    <Text style={{ fontSize: 18 }}>Seni yang indah</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor2 }]} onPress={checkedOption2}>
-                    <Text style={{ fontSize: 18 }}>Tidak Setuju</Text>
+                    <Text style={{ fontSize: 18 }}>Seni yang menarik</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor3 }]} onPress={checkedOption3}>
-                    <Text style={{ fontSize: 18 }}>Biasa Saja</Text>
+                    <Text style={{ fontSize: 18 }}>Seni yang buruk</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor4 }]} onPress={checkedOption4}>
-                    <Text style={{ fontSize: 18 }}>Setuju</Text>
+                    <Text style={{ fontSize: 18 }}>Bukanlah sebuah seni</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor5 }]} onPress={checkedOption5}>
-                    <Text style={{ fontSize: 18 }}>Sangat Setuju</Text>
+                    <Text style={{ fontSize: 18 }}>Tidak ada opini</Text>
                 </TouchableOpacity>
             </View>
         )
@@ -219,7 +219,7 @@ const Test8 = ({ navigation, route }) => {
                 {renderQuestion()}
                 {renderOption()}
 
-                <Image style={{ resizeMode: 'contain', height: 150, position: 'absolute', bottom: 0, left: -155 }} source={orang} />
+                <Image style={{ resizeMode: 'contain', height: 150, position: 'absolute', bottom: -20, left: -155 }} source={orang} />
             </ImageBackground>
         </SafeAreaView>
     )

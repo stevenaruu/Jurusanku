@@ -1,4 +1,4 @@
-package com.hciiiii;
+package com.jurusanku;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

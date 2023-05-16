@@ -173,19 +173,19 @@ const Test10 = ({ navigation, route }) => {
         return (
             <View>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor1 }]} onPress={checkedOption1} onPressIn={() => { setBar(1) }}>
-                    <Text style={{ fontSize: 18 }}>Sangat Tidak Setuju</Text>
+                    <Text style={{ fontSize: 18 }}>Sangat tertarik</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor2 }]} onPress={checkedOption2} onPressIn={() => { setBar(1) }}>
-                    <Text style={{ fontSize: 18 }}>Tidak Setuju</Text>
+                    <Text style={{ fontSize: 18 }}>Lumayan tertarik</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor3 }]} onPress={checkedOption3} onPressIn={() => { setBar(1) }}>
-                    <Text style={{ fontSize: 18 }}>Biasa Saja</Text>
+                    <Text style={{ fontSize: 18 }}>Sedikit tertarik</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor4 }]} onPress={checkedOption4} onPressIn={() => { setBar(1) }}>
-                    <Text style={{ fontSize: 18 }}>Setuju</Text>
+                    <Text style={{ fontSize: 18 }}>Kurang tertarik</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor5 }]} onPress={checkedOption5} onPressIn={() => { setBar(1) }}>
-                    <Text style={{ fontSize: 18 }}>Sangat Setuju</Text>
+                    <Text style={{ fontSize: 18 }}>Sangat tidak tertarik</Text>
                 </TouchableOpacity>
             </View>
         )
@@ -224,7 +224,7 @@ const Test10 = ({ navigation, route }) => {
                 {renderQuestion()}
                 {renderOption()}
 
-                <Image style={{ resizeMode: 'contain', height: 150, position: 'absolute', bottom: 0, left: -155 }} source={orang} />
+                <Image style={{ resizeMode: 'contain', height: 150, position: 'absolute', bottom: -20, left: -155 }} source={orang} />
             </ImageBackground>
         </SafeAreaView>
     )

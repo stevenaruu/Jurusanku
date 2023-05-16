@@ -174,19 +174,19 @@ const Test1 = ({ navigation, route }) => {
         return (
             <View>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor1, borderColor: '#8AAE92' }]} onPress={checkedOption1} >
-                    <Text style={{ fontSize: 18 }}>Sangat Tidak Setuju</Text>
+                    <Text style={{ fontSize: 18 }}>Iya, saya mengikuti semua</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor2 }]} onPress={checkedOption2}>
-                    <Text style={{ fontSize: 18 }}>Tidak Setuju</Text>
+                    <Text style={{ fontSize: 18 }}>Saya mengikuti beberapa</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor3 }]} onPress={checkedOption3}>
-                    <Text style={{ fontSize: 18 }}>Biasa Saja</Text>
+                    <Text style={{ fontSize: 18 }}>Saya mengikuti yang trending</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor4 }]} onPress={checkedOption4}>
-                    <Text style={{ fontSize: 18 }}>Setuju</Text>
+                    <Text style={{ fontSize: 18 }}>Saya mengikuti sedikit</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor5 }]} onPress={checkedOption5}>
-                    <Text style={{ fontSize: 18 }}>Sangat Setuju</Text>
+                    <Text style={{ fontSize: 18 }}>Saya tidak mengikuti</Text>
                 </TouchableOpacity>
             </View>
         )
@@ -223,7 +223,7 @@ const Test1 = ({ navigation, route }) => {
                 {renderQuestion()}
                 {renderOption()}
 
-                <Image style={{ resizeMode: 'contain', height: 150, position: 'absolute', bottom: 0, left: -155 }} source={orang} />
+                <Image style={{ resizeMode: 'contain', height: 150, position: 'absolute', bottom: -20, left: -155 }} source={orang} />
                 <Modal isVisible={visible}>
                     <View style={styles.modal}>
                         <View style={styles.modalText}>

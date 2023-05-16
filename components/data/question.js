@@ -1,32 +1,32 @@
 export default data = [
     {
-        question: "Keahlian apa yang lebih ingin anda tingkatkan?",
+        question: "Apakah kamu mengikuti berita tentang teknologi terkini?",
     },
     {
-        question: "Seberapa pengetahuan anda mengenai teknologi?",
+        question: "Apakah anda mengerti dan menyukai coding/programming?",
     },
     {
-        question: "Dalam skala 1-4, bagaimana rasa mau belajar anda terhadap matematika?",
+        question: "Apakah anda suka konsep pembuatan game (design stage, coding)?",
     },
     {
-        question: "Bagaimana bahasa pemrograman di mata anda?",
+        question: "Seberapa tertarik anda dengan industriyang bergerak dibidang game?",
     },
     {
-        question: "Apa yang biasa ada di pikiran anda ketika berinteraksi dengan orang lain?",
+        question: "Apakah anda tertarik melakukan proses jual-beli?",
     },
     {
-        question: "Bila seseorang ingin bercerita atau curhat pada anda, apa yang kemungkinan anda lakukan?",
+        question: "Apakah anda suka menghitung ekonomi (laba,netto,brutto)?",
     },
     {
-        question: "Bagaimana rasa keterkarikan anda terhadap design suatu bangunan yang anda lihat?",
+        question: "Apakah anda tertarik dalam pembelajaran bahasa?",
     },
     {
-        question: "Apakah anda tertarik cara kerja dan cara membuat aplikasi dan website?",
+        question: "Bagaiamanakah seni bahasa menurut opini anda?",
     },
     {
-        question: "Dalam skala 1-4, bagaimana ketertarikan anda dalam mempelajari cara menggambar?",
+        question: "Apakah anda tipe orang yang peduli terhadap hewan?",
     },
     {
-        question: "Menurut anda, mengapa matematika sangat penting dan sangat terasa kehadiranya di sejarah manusia?",
+        question: "Bagaimana ketertarikan anda dengan pelajaran biologi?",
     }
 ]
