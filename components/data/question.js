@@ -9,7 +9,7 @@ export default data = [
         question: "Apakah anda suka konsep pembuatan game (design stage, coding)?",
     },
     {
-        question: "Seberapa tertarik anda dengan industriyang bergerak dibidang game?",
+        question: "Seberapa tertarik anda dengan industri yang bergerak dibidang game?",
     },
     {
         question: "Apakah anda tertarik melakukan proses jual-beli?",

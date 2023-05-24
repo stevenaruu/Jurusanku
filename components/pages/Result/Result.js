@@ -1,7 +1,8 @@
 import { StyleSheet, Text, View, SafeAreaView, ImageBackground, Image, TouchableOpacity } from 'react-native'
-import { useState } from 'react'
-import { arrow, arrow2, dokter, game_app, green_wallpaper, programmer, sastra_bahasa } from '../../assets/image'
+import { useEffect, useState } from 'react'
+import { arrow, arrow2, dokter, game_app, green_wallpaper, programmer, sastra_bahasa, bisnis } from '../../assets/image'
 import Modal from 'react-native-modal'
+import { useSelector } from 'react-redux';
 
 const styles = StyleSheet.create({
     container: {
@@ -74,20 +75,52 @@ const styles = StyleSheet.create({
 const Result = ({ navigation }) => {
 
     const [visible, setVisible] = useState(false);
-    let random = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
-    console.log(random);
+    const [jurusan, setJurusan] = useState("Programmer");
+    const [description, setDescription] = useState("Kamu mempunyai ketertarik dibidang programming sebab kamu suka design tetapi kamu juga suka memperlihatkan hasil karyamu di media online");
+    const [alternatif, setAlternatif] = useState("Front-End, Back-End");
+    const [image, setImage] = useState(programmer);
+    const { point } = useSelector((state) => state.point);
+
+    useEffect(() => {
+        if (point >= 0 && point <= 100) {
+            setJurusan("Programmer");
+            setDescription("Kamu mempunyai ketertarik dibidang programming sebab kamu suka design tetapi kamu juga suka memperlihatkan hasil karyamu di media online");
+            setImage(programmer);
+            setAlternatif("Front-End, Back-End");
+        } else if (point >= 101 && point <= 200) {
+            setJurusan("Game Application");
+            setDescription("Kamu merupakan seseorang yang suka bermain game disamping itu kamu mempunyai keinginan untuk membuat game");
+            setImage(game_app);
+            setAlternatif("Professional Player, Bisnis");
+        } else if (point >= 201 && point <= 300) {
+            setJurusan("Bisnis");
+            setDescription("Kamu suka melakukan suatu hal yang menghasilkan uang, maka dari itu bisnis merupakan salah satu jurusan yang cocok untukmu");
+            setImage(bisnis);
+            setAlternatif("Manajemen, Akuntansi");
+        } else if (point >= 301 && point <= 400) {
+            setJurusan("Sastra Bahasa");
+            setDescription("Kamu merupakan seorang yang suka mempelajari bahasa asing, selain itu penggunaan bahasa asingmu suka baik. Disamping itu kamu cepat dalam mempelajari bahasa asing");
+            setImage(sastra_bahasa);
+            setAlternatif("Guru, Pariwisata");
+        } else if (point >= 401 && point <= 500) {
+            setJurusan("Dokter Hewan");
+            setDescription("Kamu mempunyai sifat penolong yang kuat, yang membuatmu ingin menjadi dokter, tetapi karena ketertarikanmu pada hewan membuatmu cocok untuk menjadi dokter hewan");
+            setImage(dokter);
+            setAlternatif("Dokter Kecantikan, Bidan");
+        }
+    }, [point]);
 
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <ImageBackground style={styles.container} source={green_wallpaper}>
                 <View style={styles.header}>
                     <Text style={styles.text}>Jurusan kuliah yang cocok untukmu ialah:</Text>
-                    <Text style={[styles.text, { marginTop: 20, color: '#474747' }]}>Front-End</Text>
+                    <Text style={[styles.text, { marginTop: 20, color: '#474747' }]}>{jurusan}</Text>
                 </View>
-                <Image source={programmer} style={{ width: 300, resizeMode: 'contain' }} />
-                <Text style={{ fontSize: 16, fontWeight: 'bold' }} >Kamu mempunyai ketertarik dibidang programming sebab kamu suka design tetapi kamu juga suka memperlihatkan hasil karyamu di media online</Text>
+                <Image source={image} style={{ width: 300, resizeMode: 'contain' }} />
+                <Text style={{ fontSize: 16, fontWeight: 'bold' }} >{description}</Text>
                 <Text style={{ marginTop: 20, fontSize: 20, fontWeight: 'bold', color: '#474747' }} >Alternatif:</Text>
-                <Text style={{ fontWeight: 'bold' }}>Back-end, UI/UX Design</Text>
+                <Text style={{ fontWeight: 'bold' }}>{alternatif}</Text>
                 <TouchableOpacity style={styles.next} onPress={() => setVisible(true)}>
                     <Text style={{ fontSize: 20, fontWeight: 'bold', textDecorationLine: 'underline' }} >Next</Text>
                     <Image source={arrow2} style={{ resizeMode: 'contain', width: 30, height: 15, marginTop: 1 }} />

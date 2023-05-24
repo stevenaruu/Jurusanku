@@ -4,6 +4,8 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import data from '../../data/question'
 import { arrow, orang, white_wallpaper } from '../../assets/image'
 import * as Progress from 'react-native-progress';
+import { useDispatch } from "react-redux"
+import { add } from '../../../features/pointSlice'
 
 const styles = StyleSheet.create({
 
@@ -86,6 +88,7 @@ const styles = StyleSheet.create({
 const Test9 = ({ navigation, route }) => {
 
     const allQuestions = data;
+    const dispatch = useDispatch();
 
     const [optionColor1, setOptionColor1] = useState('#C4E3CB');
     const [optionColor2, setOptionColor2] = useState('#C4E3CB');
@@ -117,6 +120,7 @@ const Test9 = ({ navigation, route }) => {
         setOptionColor4('#C4E3CB')
         setOptionColor5('#C4E3CB')
 
+        dispatch(add({ point: 50 }))
         navigation.navigate('Test10', { next: 0.9 })
     }
 
@@ -128,6 +132,7 @@ const Test9 = ({ navigation, route }) => {
         setOptionColor4('#C4E3CB')
         setOptionColor5('#C4E3CB')
         
+        dispatch(add({ point: 10 }))
         navigation.navigate('Test10', { next: 0.9 })
     }
 
@@ -139,6 +144,7 @@ const Test9 = ({ navigation, route }) => {
         setOptionColor4('#C4E3CB')
         setOptionColor5('#C4E3CB')
         
+        dispatch(add({ point: 20 }))
         navigation.navigate('Test10', { next: 0.9 })
     }
 
@@ -150,6 +156,7 @@ const Test9 = ({ navigation, route }) => {
         setOptionColor1('#C4E3CB')
         setOptionColor5('#C4E3CB')
         
+        dispatch(add({ point: 40 }))
         navigation.navigate('Test10', { next: 0.9 })
     }
 
@@ -161,6 +168,7 @@ const Test9 = ({ navigation, route }) => {
         setOptionColor4('#C4E3CB')
         setOptionColor1('#C4E3CB')
         
+        dispatch(add({ point: 30 }))
         navigation.navigate('Test10', { next: 0.9 })
     }
 

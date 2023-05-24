@@ -9,8 +9,11 @@ const pointSlice = createSlice({
         add: (state, action) => {
             state.point += action.payload.point
         },
+        reset: (state, action) => {
+            state.point = 0
+        }
     }
 })
 
-export const { point } = pointSlice.actions
+export const { add, reset } = pointSlice.actions
 export default pointSlice.reducer
