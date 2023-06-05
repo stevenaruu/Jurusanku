@@ -82,27 +82,27 @@ const Result = ({ navigation }) => {
     const { point } = useSelector((state) => state.point);
 
     useEffect(() => {
-        if (point >= 0 && point <= 100) {
+        if (point >= 0 && point <= 200) {
             setJurusan("Programmer");
             setDescription("Kamu mempunyai ketertarik dibidang programming sebab kamu suka design tetapi kamu juga suka memperlihatkan hasil karyamu di media online");
             setImage(programmer);
             setAlternatif("Front-End, Back-End");
-        } else if (point >= 101 && point <= 200) {
+        } else if (point >= 210 && point <= 400) {
             setJurusan("Game Application");
             setDescription("Kamu merupakan seseorang yang suka bermain game disamping itu kamu mempunyai keinginan untuk membuat game");
             setImage(game_app);
             setAlternatif("Professional Player, Bisnis");
-        } else if (point >= 201 && point <= 300) {
+        } else if (point >= 410 && point <= 600) {
             setJurusan("Bisnis");
             setDescription("Kamu suka melakukan suatu hal yang menghasilkan uang, maka dari itu bisnis merupakan salah satu jurusan yang cocok untukmu");
             setImage(bisnis);
             setAlternatif("Manajemen, Akuntansi");
-        } else if (point >= 301 && point <= 400) {
+        } else if (point >= 610 && point <= 800) {
             setJurusan("Sastra Bahasa");
             setDescription("Kamu merupakan seorang yang suka mempelajari bahasa asing, selain itu penggunaan bahasa asingmu suka baik. Disamping itu kamu cepat dalam mempelajari bahasa asing");
             setImage(sastra_bahasa);
             setAlternatif("Guru, Pariwisata");
-        } else if (point >= 401 && point <= 500) {
+        } else if (point >= 810 && point <= 1000) {
             setJurusan("Dokter Hewan");
             setDescription("Kamu mempunyai sifat penolong yang kuat, yang membuatmu ingin menjadi dokter, tetapi karena ketertarikanmu pada hewan membuatmu cocok untuk menjadi dokter hewan");
             setImage(dokter);

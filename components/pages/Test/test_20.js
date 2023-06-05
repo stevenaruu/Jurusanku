@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     }
 })
 
-const Test2 = ({ navigation, route }) => {
+const Test20 = ({ navigation, route }) => {
 
     const allQuestions = data;
     const dispatch = useDispatch();
@@ -101,12 +101,12 @@ const Test2 = ({ navigation, route }) => {
             <View>
                 {/* question counter */}
                 <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
-                    <Text style={{ fontSize: 22 }} >2</Text>
+                    <Text style={{ fontSize: 22 }} >20</Text>
                     <Text style={{ fontSize: 18 }}> / {allQuestions.length}</Text>
                 </View>
 
                 {/* question */}
-                <Text style={{ fontSize: 30, fontWeight: 'bold' }}>{allQuestions[1]?.question}</Text>
+                <Text style={{ fontSize: 30, fontWeight: 'bold' }}>{allQuestions[19]?.question}</Text>
             </View>
         )
 
@@ -120,8 +120,8 @@ const Test2 = ({ navigation, route }) => {
         setOptionColor4('#C4E3CB')
         setOptionColor5('#C4E3CB')
 
-        navigation.navigate('Test3', { next: 0.1 })
-        dispatch(add({ point: 10 }))
+        dispatch(add({ point: 50 }))
+        navigation.navigate('Validate')
     }
 
     const checkedOption2 = () => {
@@ -131,9 +131,9 @@ const Test2 = ({ navigation, route }) => {
         setOptionColor3('#C4E3CB')
         setOptionColor4('#C4E3CB')
         setOptionColor5('#C4E3CB')
-        
-        dispatch(add({ point: 20 }))
-        navigation.navigate('Test3', { next: 0.1 })
+
+        dispatch(add({ point: 10 }))
+        navigation.navigate('Validate')
     }
 
     const checkedOption3 = () => {
@@ -143,9 +143,9 @@ const Test2 = ({ navigation, route }) => {
         setOptionColor1('#C4E3CB')
         setOptionColor4('#C4E3CB')
         setOptionColor5('#C4E3CB')
-        
-        dispatch(add({ point: 30 }))
-        navigation.navigate('Test3', { next: 0.1 })
+
+        dispatch(add({ point: 20 }))
+        navigation.navigate('Validate')
     }
 
     const checkedOption4 = () => {
@@ -155,9 +155,9 @@ const Test2 = ({ navigation, route }) => {
         setOptionColor3('#C4E3CB')
         setOptionColor1('#C4E3CB')
         setOptionColor5('#C4E3CB')
-        
+
         dispatch(add({ point: 40 }))
-        navigation.navigate('Test3', { next: 0.1 })
+        navigation.navigate('Validate')
     }
 
     const checkedOption5 = () => {
@@ -167,28 +167,28 @@ const Test2 = ({ navigation, route }) => {
         setOptionColor3('#C4E3CB')
         setOptionColor4('#C4E3CB')
         setOptionColor1('#C4E3CB')
-        
-        dispatch(add({ point: 50 }))
-        navigation.navigate('Test3', { next: 0.1 })
+
+        dispatch(add({ point: 30 }))
+        navigation.navigate('Validate')
     }
 
     const renderOption = () => {
         return (
             <View>
-                <TouchableOpacity style={[styles.option, { backgroundColor: optionColor1 }]} onPress={checkedOption1} >
-                    <Text style={{ fontSize: 18 }}>Suka dan mengerti</Text>
+                <TouchableOpacity style={[styles.option, { backgroundColor: optionColor1 }]} onPress={checkedOption1} onPressIn={() => { setBar(1) }}>
+                    <Text style={{ fontSize: 18 }}>Saya sangat suka</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={[styles.option, { backgroundColor: optionColor2 }]} onPress={checkedOption2}>
-                    <Text style={{ fontSize: 18 }}>Lumayan mengerti dan suka</Text>
+                <TouchableOpacity style={[styles.option, { backgroundColor: optionColor2 }]} onPress={checkedOption2} onPressIn={() => { setBar(1) }}>
+                    <Text style={{ fontSize: 18 }}>Saya lumayan suka</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={[styles.option, { backgroundColor: optionColor3 }]} onPress={checkedOption3}>
-                    <Text style={{ fontSize: 18 }}>Sedikit tertarik dan mengerti</Text>
+                <TouchableOpacity style={[styles.option, { backgroundColor: optionColor3 }]} onPress={checkedOption3} onPressIn={() => { setBar(1) }}>
+                    <Text style={{ fontSize: 18 }}>Kurang suka</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={[styles.option, { backgroundColor: optionColor4 }]} onPress={checkedOption4}>
-                    <Text style={{ fontSize: 18 }}>Tidak mengerti namun tertarik</Text>
+                <TouchableOpacity style={[styles.option, { backgroundColor: optionColor4 }]} onPress={checkedOption4} onPressIn={() => { setBar(1) }}>
+                    <Text style={{ fontSize: 18 }}>Tidak suka</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={[styles.option, { backgroundColor: optionColor5 }]} onPress={checkedOption5}>
-                    <Text style={{ fontSize: 18 }}>Tidak sama sekali</Text>
+                <TouchableOpacity style={[styles.option, { backgroundColor: optionColor5 }]} onPress={checkedOption5} onPressIn={() => { setBar(1) }}>
+                    <Text style={{ fontSize: 18 }}>Saya benci</Text>
                 </TouchableOpacity>
             </View>
         )
@@ -196,13 +196,13 @@ const Test2 = ({ navigation, route }) => {
 
     const backButton = () => {
         return (
-            <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()} onPressIn={() => { setBar(0) }}>
+            <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()} onPressIn={() => { setBar(0.85) }} >
                 <Image source={arrow} style={{ resizeMode: 'contain', height: 25 }} />
             </TouchableOpacity>
         )
     }
-    
-    const [bar, setBar] = useState(0)
+
+    const [bar, setBar] = useState(0.9)
 
     const { next } = route.params
 
@@ -233,4 +233,4 @@ const Test2 = ({ navigation, route }) => {
     )
 }
 
-export default Test2
+export default Test20

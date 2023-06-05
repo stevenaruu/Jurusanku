@@ -127,7 +127,7 @@ const Test1 = ({ navigation, route }) => {
         setOptionColor5('#C4E3CB')
 
         dispatch(add({ point: 10 }))
-        navigation.navigate('Test2', { next: 0.1 })
+        navigation.navigate('Test2', { next: 0.05 })
     }
 
     const checkedOption2 = () => {
@@ -139,7 +139,7 @@ const Test1 = ({ navigation, route }) => {
         setOptionColor5('#C4E3CB')
 
         dispatch(add({ point: 20 }))
-        navigation.navigate('Test2', { next: 0.1 })
+        navigation.navigate('Test2', { next: 0.05 })
     }
 
     const checkedOption3 = () => {
@@ -151,7 +151,7 @@ const Test1 = ({ navigation, route }) => {
         setOptionColor5('#C4E3CB')
 
         dispatch(add({ point: 30 }))
-        navigation.navigate('Test2', { next: 0.1 })
+        navigation.navigate('Test2', { next: 0.05 })
     }
 
     const checkedOption4 = () => {
@@ -163,7 +163,7 @@ const Test1 = ({ navigation, route }) => {
         setOptionColor5('#C4E3CB')
 
         dispatch(add({ point: 40 }))
-        navigation.navigate('Test2', { next: 0.1 })
+        navigation.navigate('Test2', { next: 0.05 })
     }
 
     const checkedOption5 = () => {
@@ -175,7 +175,7 @@ const Test1 = ({ navigation, route }) => {
         setOptionColor1('#C4E3CB')
 
         dispatch(add({ point: 50 }))
-        navigation.navigate('Test2', { next: 0.1 })
+        navigation.navigate('Test2', { next: 0.05 })
     }
 
     const renderOption = () => {

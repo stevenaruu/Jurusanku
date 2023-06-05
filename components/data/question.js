@@ -33,25 +33,25 @@ export default data = [
         question: "Apakah anda suka dengan proses mengembangkan bisnis?",
     },
     {
-        question: "Apakah anda merasa anda punya leadership yg kuat?",
+        question: "Apakah anda merasa anda memiliki jiwa leadership yang kuat?",
     },
     {
         question: "Apakah anda tertarik dalam pembelajaran bahasa?",
     },
     {
-        question: "Bagaimanakah seni bahasa menurut opini anda?",
+        question: "Bagaimanakah seni yang bergerak di bidang bahasa menurut anda?",
     },
     {
-        question: "Berapa jumlah bahasa yang dapat anda kuasai?",
+        question: "Berapa jumlah bahasa yang dapat anda kuasai saat ini?",
     },
     {
-        question: "Apakah anda tertarik untuk mempelajari bahasa negara lain",
+        question: "Apakah anda tertarik untuk mempelajari bahasa negara lain?",
     },
     {
-        question: "Apakah anda tipe orang yang menyayangi hewan?",
+        question: "Apakah anda tipe orang yang suka dan menyayangi hewan?",
     },
     {
-        question: "Bagaimana ketertarikan anda dengan biologi?",
+        question: "Bagaimana ketertarikan anda dengan mata pelajaran biologi?",
     },
     {
         question: "Apakah anda merasa lebih bahagia bila di sekitar hewan?",

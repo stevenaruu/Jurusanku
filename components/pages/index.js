@@ -9,6 +9,16 @@ import Test7 from "./Test/test_7";
 import Test8 from "./Test/test_8";
 import Test9 from "./Test/test_9";
 import Test10 from "./Test/test_10";
+import Test11 from "./Test/test_11";
+import Test12 from "./Test/test_12";
+import Test13 from "./Test/test_13";
+import Test14 from "./Test/test_14";
+import Test15 from "./Test/test_15";
+import Test16 from "./Test/test_16";
+import Test17 from "./Test/test_17";
+import Test18 from "./Test/test_18";
+import Test19 from "./Test/test_19";
+import Test20 from "./Test/test_20";
 import Validate from "./Validate/Validate";
 import Result from "./Result/Result";
 import Splash from "./Splash";
@@ -18,4 +28,4 @@ import Loading from "./Loading/Loading";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
 
-export { Home, Test1, Test2, Test3, Test4, Test5, Test6, Test7, Test8, Test9, Test10, Validate, Result, Splash, ThankSplash, Thank, Loading, Login, Register }
+export { Home, Test1, Test2, Test3, Test4, Test5, Test6, Test7, Test8, Test9, Test10, Test11, Test12, Test13, Test14, Test15, Test16, Test17, Test18, Test19, Test20, Validate, Result, Splash, ThankSplash, Thank, Loading, Login, Register }

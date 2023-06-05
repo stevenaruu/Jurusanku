@@ -120,8 +120,8 @@ const Test8 = ({ navigation, route }) => {
         setOptionColor4('#C4E3CB')
         setOptionColor5('#C4E3CB')
 
-        dispatch(add({ point: 40 }))
-        navigation.navigate('Test9', { next: 0.8 })
+        dispatch(add({ point: 20 }))
+        navigation.navigate('Test9', { next: 0.4 })
     }
 
     const checkedOption2 = () => {
@@ -132,8 +132,8 @@ const Test8 = ({ navigation, route }) => {
         setOptionColor4('#C4E3CB')
         setOptionColor5('#C4E3CB')
         
-        dispatch(add({ point: 30 }))
-        navigation.navigate('Test9', { next: 0.8 })
+        dispatch(add({ point: 10 }))
+        navigation.navigate('Test9', { next: 0.4 })
     }
 
     const checkedOption3 = () => {
@@ -144,8 +144,8 @@ const Test8 = ({ navigation, route }) => {
         setOptionColor4('#C4E3CB')
         setOptionColor5('#C4E3CB')
        
-        dispatch(add({ point: 20 }))
-        navigation.navigate('Test9', { next: 0.8 })
+        dispatch(add({ point: 30 }))
+        navigation.navigate('Test9', { next: 0.4 })
     }
 
     const checkedOption4 = () => {
@@ -157,7 +157,7 @@ const Test8 = ({ navigation, route }) => {
         setOptionColor5('#C4E3CB')
         
         dispatch(add({ point: 50 }))
-        navigation.navigate('Test9', { next: 0.8 })
+        navigation.navigate('Test9', { next: 0.4 })
     }
 
     const checkedOption5 = () => {
@@ -168,27 +168,27 @@ const Test8 = ({ navigation, route }) => {
         setOptionColor4('#C4E3CB')
         setOptionColor1('#C4E3CB')
         
-        dispatch(add({ point: 10 }))
-        navigation.navigate('Test9', { next: 0.8 })
+        dispatch(add({ point: 40 }))
+        navigation.navigate('Test9', { next: 0.4 })
     }
 
     const renderOption = () => {
         return (
             <View>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor1 }]} onPress={checkedOption1} >
-                    <Text style={{ fontSize: 18 }}>Seni yang indah</Text>
+                    <Text style={{ fontSize: 18 }}>Sangat tertarik</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor2 }]} onPress={checkedOption2}>
-                    <Text style={{ fontSize: 18 }}>Seni yang menarik</Text>
+                    <Text style={{ fontSize: 18 }}>Lumayan tertarik</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor3 }]} onPress={checkedOption3}>
-                    <Text style={{ fontSize: 18 }}>Seni yang buruk</Text>
+                    <Text style={{ fontSize: 18 }}>Sedikit tertarik</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor4 }]} onPress={checkedOption4}>
-                    <Text style={{ fontSize: 18 }}>Bukanlah sebuah seni</Text>
+                    <Text style={{ fontSize: 18 }}>Kurang tertarik</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.option, { backgroundColor: optionColor5 }]} onPress={checkedOption5}>
-                    <Text style={{ fontSize: 18 }}>Tidak ada opini</Text>
+                    <Text style={{ fontSize: 18 }}>Tidak sama sekali</Text>
                 </TouchableOpacity>
             </View>
         )
@@ -196,13 +196,13 @@ const Test8 = ({ navigation, route }) => {
 
     const backButton = () => {
         return (
-            <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()} onPressIn={() => { setBar(0.5) }}>
+            <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()} onPressIn={() => { setBar(0.25) }}>
                 <Image source={arrow} style={{ resizeMode: 'contain', height: 25 }} />
             </TouchableOpacity>
         )
     }
     
-    const [bar, setBar] = useState(0.6)
+    const [bar, setBar] = useState(0.3)
 
     const { next } = route.params
 
