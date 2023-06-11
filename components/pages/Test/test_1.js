@@ -244,7 +244,7 @@ const Test1 = ({ navigation, route }) => {
                                     TIDAK
                                 </Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={[styles.modalButtonValue, { backgroundColor: '#8AAE92' }]} onPress={() => navigation.navigate('Home')} >
+                            <TouchableOpacity style={[styles.modalButtonValue, { backgroundColor: '#8AAE92' }]} onPress={() => navigation.navigate('Home', { isLogin: true })} >
                                 <Text style={{ color: '#F4F9F4', fontWeight: 'bold' }}>
                                     YA
                                 </Text>
